@@ -1,4 +1,5 @@
 const branch = process.env.CI_COMMIT_BRANCH
+console.log(branch);
 
 const config = {
   branches: ["+([0-9])?(.{+([0-9]),x}).x",'production', {name:"staging", prerelease:"rc"},{name:"main", prerelease: "beta"}],
